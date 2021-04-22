@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="top-menu-left">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../ContactPage/contactpage.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="top-menu-right">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="../Courses/courses.html">Courses</a></li>
+                        <li><a href="../Trainers/trainers.html">Trainers</a></li>
+                        <li><a href="../Students/students.html">Students</a></li>
+                        <li><a href="../Assignments/assignments.html">Assignments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside class="menu">
+            <nav>
+                <ul>
+                    <li><a href="displayassignments.html">Display</a></li>
+                    <li><a href="addassignment.html">Add</a></li>
+                    <li><a href="updateassignment.html">Update</a></li>
+                    <li><a href="editassignment.html">Edit</a></li>
+                    <li><a href="deleteassignment.html">Delete</a></li>
+                    <li><a href="assignmentpercourse.html">Add Assignment to Course</a></li>
+                    <li><a href="assignmentperstudentpercourse.html">Assignments per Student per Course</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <div class="main-content">
+            <h3>Update Assignment</h3>
+            <div class="error" id="emptyInputs"></div>
+            <form action="updateassignmentsuccess.html" method="GET" id="myForm" novalidate>
+
+                <div class="error" id="firstNameValidation"></div>
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" value="Game" required>
+
+                <label for="description">Description:</label>
+                <input type="text" name="description" id="description" value="Build a game" required>
+
+
+                <label for="deadline">Deadline:</label>
+                <input type="date" name="deadline" id="deadline" value="2021-05-15" required>
+
+                <div class="error" id="oralmarkValidation"></div>
+                <label for="oralmark">Oral Mark:</label>
+                <input type="number" name="oralmark" id="oralmark" value="20" required>
+
+                <div class="error" id="totalmarkValidation"></div>
+                <label for="totalmark">Total Mark:</label>
+                <input type="number" name="totalmark" id="totalmark" value="100" required>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+    </main>
+    <footer>&copy; 2021 Coding School</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
